@@ -46,6 +46,10 @@ footer {
 	margin-top: 0;
 	margin-bottom: 20px;
 }
+.post h2 a {
+	text-decoration: none;
+	color:#414640
+}
 .post p { /* Inhalt */
 	font-size: 18px;
 	line-height: 1.6;

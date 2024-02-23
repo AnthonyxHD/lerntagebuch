@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
 		<link rel="stylesheet" href="../assets/stylesheet.css">
 		
-		<title>Blogtitel</title>
+		<title>Technische Grundlagen 02</title>
 	</head>
 	
 	<body>
@@ -14,20 +14,59 @@
 		</header>
 		
 		<div class="container">
-			<h1 style="text-align: center;">Blogtitel</h1> <!-- Blogtitel -->
+			<h1 style="text-align: center;">Technische Grundlagen 02</h1> <!-- Blogtitel -->
 			<div class="post-img">
 				<img src="../assets/img/3) Thumbnail_Technische Grundlagen 02.webp" alt="Thumbnail - Technische Grundlagen 02"> <!-- Thumbnail -->
 			</div>
 			<!-- Inhalt -->
 			<div class="post">
 				<div>
-					<p>Bloginhalt</p>
-
+					<p>Am 14. Februar 2024 fand die erste Lernveranstaltung des Moduls «Bibliotheks- und Archivinformatik» statt. Die Veranstaltung erstreckte sich über zwei Unterrichtsblöcke à je 3.5 Stunden (Morgen / Vormittag) und konzentrierte sich auf grundlegende technische Aspekte. Dieser Blogbeitrag fasst die behandelten Themen der zweiten 2.5 Stunden unter dem Titel «Technische Grundlagen 02» zusammen.</p>
+					<p>Der erste Teil ist <a href="../post/2)_technische-grundlagen-01.html">hier</a> verfügbar.</p>
+					<h2>Timeout erhöhen</h2>
+					<p>Am Anfang des Nachmittagsunterrichts erhielte wir eine Anleitung zum Erhöhen des Timeout im Codespace. Dieses lässt sich nach Bedarf unter folgenden Pfad anpassen:</p>
+					<p><a href="https://github.com/settings/codespaces"><i>Settings</i></a> > <i>Codespaces</i> > <i>Default idle timeout</i></p>
+					<p>Auf Empfehlung des Dozenten wurde die Standardeinstellung auf 240 Min erhöht. Diese Anpassung soll sich bei grösseren Pausen als hilfreich erweisen.</p>
+					<img src="../assets/img/blog 3/timeout_setting.png" alt="Settings Timeout" class="content-img">
+					<br>
+					<h2>Grundlagen Unix Shell</h2>
+					<p>Die Unix Shell wurde als gängige Methode in der Serveradministration vorgestellt. Zudem ist sie bliebt bei der Automatisierung kleinerer Aufgaben. In dieser Einführung haben wir selbstständig <b>zwei Übungen</b> der <a href="https://librarycarpentry.org/lessons/">Library Carpentry Lesson</a> gelöst, ein Angebot der <a href="https://librarycarpentry.org">Library Carpentry Community</a>. Die praktische Umsetzung erfolgte in der eingerichteten <a href="../post/2)_technische-grundlagen-01.html">Arbeitsumgebung</a>.</p>
+					<img src="../assets/img/blog 3/ui_codespaces.png" alt="Vorschau UI Codespace" class="content-img">
+					<br>
+					<h2>Navigation the filesystem</h2>
+					<p>Diese Übung behandelte die Orientierung und Bewegungsmöglichkeiten in der Verzeichnisstruktur mit Shell-Befehlen. Es wurde betont, dass Befehle durch <b>Flags</b> ergänzt werden können, um den Computer mitzuteilen, welche Art von Ausgaben/Manipulation gewünscht ist. Dabei können Flags kombiniert werden, indem man sie zusammen eingibt.</p>
+					<p>Die vorgestellten Befehle <b>pwd</b>, <b>ls</b> und <b>cd</b> waren mir bereit aus den Modulen ARIS und LEZY 2 (siehe <a href="../post/1_wo-bin-ich-gestartet.html">Blog 1</a>) bekannt. Dank dieser Vorkenntnisse konnte die Aufgabe problemlos gelöst werden, dennoch war eine Auffrischung hilfreich.</p>
+					<h2>Working with files and directories</h2>
+					<p>Die zweite Aufgabe konzentrierte sich auf die Interaktion mit Dateien mithilfe der Befehle: <b>mkdir</b>, <b>cat</b>, <b>head</b>, <b>tail</b> und <b>less</b>. Diese Befehle waren mit aus dem ARIS-Modul bekannt, jedoch war eine Auffrischung notwendig.</p>
+					<h2>Automating the tedious with loops</h2>
+					<p>Die beiden Aufgaben wurden rasch gelöst, weshalb ich mich einer dritten Übung zuwandte. Zeitbedingt wurde diese nur überflogen. Dabei setzte ich mich mit dem Schlüsselwort <b>for</b> auseinander, das Ähnlichkeiten zu Pyhton und JavaScript aufweist, welche bereits in PROG und FRONT behandelt wurden. Eine Erläuterung, wie sich die Verwendung in der Shell davon unterscheidet, wäre jedoch hilfreich.</p>
+					<img src="../assets/img/blog 3/for.png" alt="for Befehl" class="content-img">
+					<br>
+					<h2>Counting and mining with the shell</h2>
+					<p>Nach den Übungen haben wir als Klasse eine weitere Aufgabe gelöst, in der das Prinzip der Pipes und Filters erklärt wurde. Obwohl dieses Thema in ARIS behandelt wurde, ist das Wissen darüber nicht mehr präsent. Grundsätzlich ermöglicht es, dass Befehle miteinander verbunden und umgeleitet werden können. Zudem bildet es die Grundlage für die automatisierte Bearbeitung grosser Datenmengen.</p>
+					<img src="../assets/img/blog 3/pipeline_and_filter.png" alt="Pipeline and Filter Unix Shell" class="content-img">
+					<br>
+					<p>Im Anschluss gab es einen Exkurs zu <a href="https://regex101.com">Regular Expressions</a>. Der Einstieg fiel mir schwer, da ich bisher noch keine Erfahrung damit hatte. Aufgrund dessen würde ich mir hier mehr Inputs und Erklärungen wünschen.</p>
+					<h2>Typischer Git Workflow</h2>
+					<p>Als nächstes beschäftigten uns mit Git, GitHub und GitLab. Es wurden die Unterschiede, Möglichkeiten, Vorteile und ein <a href="https://docs.rhodecode.com/RhodeCode-Enterprise/collaboration/workflow-fork.html">typischer Workflow</a> erklärt.</p>
+					<img src="../assets/img/blog 3/forking_workflow.png" alt="Forking Workflow" clas="content-img">
+					<br>
+					<p><b>1) Fork:</b> Kopie des Git-Repositories erstellen, um unabhängige Änderungen vorzunehmen<br>
+						<b>2) Commits:</b> Anpassungen im Fork durch Commits dokumentieren<br>
+						<b>3) Pull Request:</b> Anfrage, um Änderungen im Repository zu integrieren</p>
+					<p>Diese Arbeitsweise wurde im FRONT-Modul gelernt und eingesetzt. Somit diente dies nur als Repetition.</p>
+					<h2>Zwischenfazit</h2>
+					<p>Die Unterrichtseinheit wurde mit einem Zwischenstand abgeschlossen, bei dem das Gelernte des Tages kurz zusammengefasst wurde. Jegliche Notizen wurden im <a href="https://pad.gwdg.de/H-dlBlKaS9-xqX0ZH8fqcw">Notizdokument</a> festgehalten. Als Aufgabe für den Veranstaltungstermin am 27. Februar 2024 erhielten wir die Aufgabe, die ersten drei Blogbeiträge zu erstellen.</p>
+					<h2>Tipps zur Unix Shell</h2>
+					<p><a href="https://librarycarpentry.org/lc-shell/reference.html">Library Carpentry Reference</a><br>
+						<a href="https://devhints.io/linux">Cheatsheet Linux</a><br>
+						<a href="https://devhints.io/bash">Cheatsheet Shell Scripte</a><br>
+						<a href="https://wiki.ubuntuusers.de/Shell/Befehlsübersicht/">Befehlsübersicht Shell</a></p>
 				</div>
 			</div>
 			<!-- Metadaten -->
-			<p>Zeichen: x</p>
-			<p>Verfasst am: dd.yyyy.mmmm</p>
+			<p>Zeichen: 3.973</p>
+			<p>Verfasst am: 23. Februar 2024</p>
 		</div>
 		
 		<footer>

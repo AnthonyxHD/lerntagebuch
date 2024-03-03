@@ -21,13 +21,70 @@
 			<!-- Inhalt -->
 			<div class="post">
 				<div>
-					
-
+					<h2>Metadatenstandards in Bibliotheken</h2>
+					<p>Zu Beginn der Unterrichtseinheit vom 27. Februar 2024 wurden uns verschiedene Metadatenstandards vorgestellt.</p>
+					<p><a href="https://www.loc.gov/marc/bibliographic/">MARC21</a> im Jahr 1999 von der <a href="https://www.loc.gov">Library of Congress</a> veröffentlicht, findet weltweit Anwendung in Bibliotheken (<a href="https://en.wikipedia.org/wiki/MARC_standards">mehr</a>). Dieser Standard verfügt über sein eigenes Binärformat, <a href="http://format.gbv.de/marc/iso">.mrc</a>, und bietet eine <a href="http://format.gbv.de/marc/xml">XML</a>-Coduerung an. Herausfordernd ist seine medienzentrierte Struktur, die vielen Katalogisierungsregeln auf verschiedenen Ebenen und die Möglichkeit, eigene Felder zu erstellen. Diese Aspekte führen zu Abweichungen bei der Erfassung.</p>
+					<p><a href="https://format.gbv.de/bibframe">BIBFRAME</a>, basierend auf <a href="https://format.gbv.de/rdf">RDF</a> wurde 2011 ebenfalls von der <a href="https://www.loc.gov">Library of Congress</a> veröffentlicht. Das Ziel besteht darin, MARC21 zu ersetzen und die Prinzipien des <a href="https://de.wikipedia.org/wiki/Linked_Open_Data">Linked Data</a> anzuwenden.</p>
+					<img src="../assets/img/blog 4/bibframe.png" alt="BIBFRAME" class="content-img">
+					<p>Voraussichtlich werden wir in der letzten Lernveranstaltung weitere Inputs dazu erhalten (Link folgt).</p>
+					<p><a href="https://www.dublincore.org">Dublin Core</a> findet weit über das Bibliothekswesen hinaus Anwendung. Er fungiert gewissermassen als «kleinster gemeinsamer Nenner» und erfasst in 15 Feldern die essenziellen Metadaten verschiedener Disziplinen.</p>
+					<h2>Vergleich MARC21 und Dublin Core</h2>
+					<p>Nach der Einführung haben wir selbstständig eine Übung durchgeführt, um mit den Standards vertraut zu werden. Dabei haben wir zwei Datensätze über die <a href="https://de.wikipedia.org/wiki/Search/Retrieve_via_URL">SRU-Schnittstelle</a> von <a href="https://swisscovery.slsp.ch/discovery/search?vid=41SLSP_NETWORK:VU1_UNION">Swisscovery</a> heruntergeladen und miteinander verglichen:</p>
+					<p>&#9679; <a href="https://swisscovery.slsp.ch/view/sru/41SLSP_NETWORK?version=1.2&operation=searchRetrieve&query=title=einstein&recordSchema=marcxml">MARC21</a> (rechts) <br>
+						&#9679; <a href="https://swisscovery.slsp.ch/view/sru/41SLSP_NETWORK?version=1.2&operation=searchRetrieve&query=title=einstein&recordSchema=dc">Dublin Core</a> (links)</p>
+					<img src="../assets/img/blog 4/vergleich_MARC_und_DC.png" alt="Vergleich MARC21 und DC in Visual Studio als XML" class="content-img">
+					<p><a href="https://pad.gwdg.de/EC9WU7DITxiK1ciMll3ZOw#Übung-Vergleich-MARC21-und-Dublin-Core">Fragen und Erkenntnisse</a></p>
+					<p>Nach der Nachfrage von <a href="https://drive.google.com/drive/folders/1LzqWmjtOaRDqmCyX1dcrPhbK7Tb09u9X">Nicole Gebbia</a> wurde der Unterschied zwischen den beiden Metadatenstandards genauer erläutert. Diese Unterscheidung war für mich hilfreich, da ich mit diesem Themengebiet nicht vertraut bin.</p>
+					<h2>Regelwerk &amp; Datenformat</h2>
+					<p><a href="https://de.wikipedia.org/wiki/Bibliothekarisches_Regelwerk">Regelwerk</a>: Theoretische Grundlage für Katalogisierung<br>
+						Beispiele: <a href="https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records#:~:text=Functional%20Requirements%20for%20Bibliographic%20Records%20(FRBR%20%2Fˈfɜːrb,bibliographic%20databases%20from%20a%20user%27s">FRBR</a>, <a href="https://en.wikipedia.org/wiki/Resource_Description_and_Access">RDA</a></p>
+					<p><a href="https://de.wikipedia.org/wiki/Bibliographisches_Datenformat">Datenformat</a>: praktische Repräsentation des Katalogisats<br>
+						Beispiele: <a href="https://www.loc.gov/marc/bibliographic/">MARC21</a>, <a href="https://format.gbv.de/bibframe">BIBFRAME</a></p>
+					<p>Regelwerke und Datenformate ergänzen einander und sich nicht immer trennscharf zu unterscheiden. Deshalb spricht man auch von einem <a href="https://de.wikipedia.org/wiki/Datenmodell">Datenmodell</a>.</p>
+					<h2>Bibliothekssoftware Koha</h2>
+					<p>Im weiteren Verlauf der Lernveranstaltung haben wir uns mit der Bibliothekssoftware <a href="https://koha-community.org">Koha</a> auseinandergesetzt. Dieses weltweite Open-Source-Projekt wurde im Jahr 1999 in Neuseeland gegründet. Die Lizenz und die Konfigurationsmöglichkeiten wurden uns vorgestellt.</p>
+					<img src="../assets/img/blog 4/koha_homepage.png" alt="Koha Homepage" class="content-img">
+					<p>Anschliessend haben wir anhand der <a href="https://openhub.net/p/koha">Analyse von Black Duck Open Hub</a> das Projekt evaluiert.</p>
+					<img src="../assets/img/blog 4/statistiken_koha.png" alt="Koha Statistiken" class="content-img">
+					<p>Dabei werden folgende Punkte als positiv betrachtet:</p>
+					<p>&#9679; Viele Quellcode-Kommentare weisen auf eine gute Dokumentation hin<br>
+						&#9679; Stabile Anzahl an Commits über die Jahre<br>
+						&#9679; Über 20 Contributors pro Monat</p>
+					<h2>Dokumentation Koha</h2>
+					<p>&#9679; <a href="https://dashboard.koha-community.org">Interne Projektverwaltung</a><br>
+						&#9679;  <a href="https://koha-community.org/koha-23-11-released/">Release Notes 23.11</a><br>
+						&#9679; <a href="https://koha-community.org/manual/23.11/en/html/">Handbuch DE</a></p>
+					<h2>Koha Demo & Übung</h2>
+					<p>Am Ende der Lernveranstaltung haben wir eine Demo für Koha durchgeführt. Auf der <a href="https://koha-community.org">Webseite</a> stehen viele <a href="https://koha-community.org/demo/">Demo-Installationen</a> zur Verfügung.</p>
+					<img src="../assets/img/blog 4/koha_demo_installationen.png" alt="Koha Demo-Installationen" class="content-img">
+					<p>&#9679; <a href="https://koha.adminkuhn.ch:8443">Dienstoberfläche</a><br>
+						&#9679; Benutzername: <i>demo</i><br>
+						&#9679; Passwort: <i>demo</i><br>
+						&#9679; Details: <a href="http://adminkuhn.ch/wiki/Koha-Demoinstallation">Demoinstallation</a></p>
+					<p>Bei der Demo haben wir uns im Detail folgende Punkte angeschaut:</p>
+					<p>&#9679; Dienstoberfläche<br>
+						&#9679; Dashboard/Homepage<br>
+						&#9679; Administrationsmöglichkeiten<br>
+						&#9679; Systemparameter</p>
+					<p>Bei der Übung haben wir ein einfacher Arbeitsablauf einer Bibliotheksausleihe durchgespielt:</p>
+					<p><b>1) Buch erfassen</b></p>
+					<img src="../assets/img/blog 4/buch_erfassen.png" alt="Bucherfassung Koha-Oberfläche" class="content-img">
+					<p><b>2) Benutzer anlegen</b></p>
+					<img src="../assets/img/blog 4/benutzer_anlegen.png" alt="Benutzer anlegen Koha-Oberfläche" class="content-img">
+					<p><b>3) Buch an der Theke ausleihen</b></p>
+					<img src="../assets/img/blog 4/ausleihe.png" alt="Ausleihe an der Theke Koha-Oberfläche" class="content-img">
+					<p>Bei diesem Schritt gab es einen Fehler in der Demo-Installation, sodass der dritte und vierte Schritt nicht vollständig ausgeführt werden konnte (keine Rücknahme ohne Ausleihe)</p>
+					<p><b>4) Buch an der Theke zurücknehmen</b></p>
+					<img src="../assets/img/blog 4/zuruecknahme.png" alt="Zurücknahme an der Theke Koha-Oberfläche" class="content-img">
+					<p><a href="https://pad.gwdg.de/EC9WU7DITxiK1ciMll3ZOw#Fragen-Erkenntnisse">Fragen und Erkenntnisse</a></p>
+					<h2>Learnings</h2>
+					<p>MARC21 und BIBFRAME waren für mich Neuland. Dies galt auch für den Unterschied zwischen Reglemente und Dateiformate. </p>
+					<p>Der Arbeitsablauf in der Bibliothek war mir teilweise vertraut, da ich in meiner Arbeit neu erstellte Medien in das Bibliothekssystem NetBiblio erfassen (<a href="../post/1_wo-bin-ich-gestartet.html">siehe Blog 1</a>). Interessant war jedoch, den Ablauf näher zu betrachtet. Koha hat mich durch seine intuitive Oberfläche überzeugt, obwohl ich nur wenig Erfahrung mit solcher Software habe. In diesem Zusammenhang wäre es besonders interessant, auch unterschiedliche und komplexere Abläufe in der Bibliothek kennenzulernen.</p>
 				</div>
 			</div>
 			<!-- Metadaten -->
-			<p>Zeichen: 3.960</p>
-			<p>Verfasst am: 23. Februar 2024</p>
+			<p>Zeichen: 3.947</p>
+			<p>Verfasst am: 03. März 2024</p>
 		</div>
 		
 		<footer>

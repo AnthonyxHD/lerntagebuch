@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Funktion und Aufbau von Archivsystemen</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Funktion und Aufbau von Archivsystemen</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/4) Thumbnail_Funktion und Aufbau von Bibliothekssystemen.webp" alt="Thumbnail - Funktion und Aufbau von Archivsystemen"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>In den Sitzungen am 5. Und 12. März habe wird uns mit Archivsystemen beschäftigt. Ein wichtiger Unterschied zu Bibliothekssystemen <a href="../post/4) Funktion und Aufbau von Bibliothekssystemen.html">(siehe Blog 4)</a> ist der Fokus auf den Entstehungskontext von Dokumenten.</p>
+					<h2>Metadatenstandards in Archiven</h2>
+					<p>Ein zentraler Standard in den Archiven ist der «International Standard Archival Description (General)», kurz <a hrfe="https://de.wikipedia.org/wiki/ISAD(G)">ISAD(G)</a>. Dieser umfasst 26 Verzeichnungselemente in 7 Informationsbereichen, wobei es 6 Pflichtfelder gibt. Es ist ein hierarchisches Modell mit gewissen Grenzen:</p>
+					<p>&#9679; keine Mehrfachzuordnung<br>
+						&#9679; eindimensionale Tektonik<br>
+						&#9679;	keine Vorgaben zur Digitalisierung
+					</p>
+					<img src="../assets/img/blog 5/isadg_hierarchie.png" alt="ISAD(G)-Hierarchie" class="content-img">
+					<p>Diese Thematik wurde in den Modulen «LEZY 1 & 2» sowie «GLIW2» bereits behandelt. Diese Lernveranstaltung diente als gute Repetition. In einer Übung verglichen zwei unterschiedliche Online-Archivkataloge, wobei wir <a href="https://pad.gwdg.de/FrI1nt2NSvuNOAyu_yk64A#Übung-Archivkataloge">Fragen und Erkenntnisse</a> als Klasse zusammengetragen haben.</p>
+					<h2>Datenformat EAD</h2>
+					<p>Das <a href="https://de.wikipedia.org/wiki/Encoded_Archival_Description">Encoded Archival Description (EAD)</a> ist ein XML-Standard zur Erfassung und Präsentation von Archivsammlungen. Die weitverbreitete Version <a href="https://eadiva.com/2/elements/">EAD2002</a> und die neueren <a href="https://eadiva.com/elements/">EAD3</a> beiten eine strukturierte, maschinenlesbare Form.</p>
+					<p>Übersicht über AED2002: <a href="https://wiki.dnb.de/download/attachments/90410326/20140414_KIMWS_EAD.pdf?version=1&modificationDate=1398246420000&api=v2">Folien, Nicolas Moretto</a></p>
+					<h2>Aktuelle Entwicklungenm</h2>
+					<p>Der Wechsel von ISAD(G) zu <a href="https://en.wikipedia.org/wiki/Records_in_Contexts">Records in Contexts (RiC)</a> steht hervor, aber erfordert viel Aufwand. Weitere Entwicklungen umfassen die Generierung von Volltexten durch <a href="https://en.wikipedia.org/wiki/Optical_character_recognition">Optical Character Recognition (OCR)</a> und die automatische Anreicherung durch <a href="https://en.wikipedia.org/wiki/Named-entity_recognition">Named Entity Recognition</a>. Auch Wikidate und Vernetzungsinitiativen in der Schweiz sind wichtig.</p>
+					<h2>ArchivesSpace</h2>
+					<p>ArchivesSprace ist eine Open-Source-Software für Archivinformationssysteme, unterstützt durch <a href="https://en.wikipedia.org/wiki/Lyrasis">Lyrasis</a>. Es basiert auf <a href="https://en.wikipedia.org/wiki/Describing_Archives:_A_Content_Standard ">DACS</a>, ISAD(G) und <a href="https://en.wikipedia.org/wiki/International_Standard_Archival_Authority_Record">ISAAR(CPF)</a> und unterstützt Import/Export in EAD, MARXCML und METS. Es gibt ein <a href="https://sandbox.archivesspace.org/staff">Staff-</a> und ein <a href="https://github.com/felixlohmeier/bain-archivesspace">Public</a>-Interface. Interface. Wir nutzten für das weitere Vorgehen die Demo-Version.</p>
+					<p>Für die Arbeit mit ArchivesSpaces mussten wir vorerst folgende Begrifflichkeiten klären:</p>
+					<p>&#9679; <a href="https://docs.google.com/document/d/11kWxbFTazB6q5fDNBWDHJxMf3wdVsp8cd7HzjEhE-ao/edit#heading=h.qp2gyscl8fra">Accession</a><br>
+						&#9679; <a href="https://docs.google.com/document/d/11kWxbFTazB6q5fDNBWDHJxMf3wdVsp8cd7HzjEhE-ao/edit#heading=h.jvn83ztmj4y4">Resource</a><br>
+						&#9679;	<a href="https://docs.google.com/document/d/11kWxbFTazB6q5fDNBWDHJxMf3wdVsp8cd7HzjEhE-ao/edit#heading=h.nscr859g1snm">Archival Object</a>
+					</p>
+					<p>In eine anschliessende Übung habe ich mithilfe des Hochschularchivs der ETH in ArchivesSpace einen eigenen Datensatz erstellt. Das Resultat konnte in der öffentlichen Ansicht betrahtet weden:</p>
+					<img src="../assets/img/blog 5/public-interface_archivesspace.png" alt="Public-Interface ArchivesSpace" class="content-img">
+					<h2>Übung Import / Export</h2>
+					<p>Wir führten eine Aufgabe zum Datenimport</p>
+					<img src="../assets/img/blog 5/datenimport.png" alt="Datenimport ArchivesSpace" class="content-img">
+					<p> und eine weitere zum Datenexport durch.</p>
+					<img src="../assets/img/blog 5/datenexport.png" alt="Datenexport ArchivesSpace" class="content-img">
+					<p>Dabei wurde verdeutlicht, dass die wenigsten Datenimporte problemlos passieren und sie oft angereichert werden müssen.</p>
+					<p>Vertiefungen:</p>
+					<p>&#9679; <a href="https://archivesspace.org/using-archivesspace/migration-tools-and-data-mapping">Mappinktabellen als XLS</a><br>
+						&#9679; <a href="https://archivesspace.github.io/archivesspace/doc/MarcXMLBibBaseMap.html">Technische Dokumentation der Konvertierung in MARCXML</a>
+					</p>
+					<h2>Marktübersicht und Unterschiede Bibliothek/Archiv</h2>
+					<p>Zum Abschluss erhielten wir eine Markübersicht und verglichen Bibliotheks- und Archivsysteme. Diesen Vergleich war sehr hilfreich, da ich mich in keine der beiden Welten gut auskenne.</p>
+					<p><b>Bibliothek</b></p>
+					<p>&#9679; Massenmedium, Benutzerinteraktion<br>
+						&#9679; Software medienzentriert<br>
+						&#9679;	Metadatenformat: MARC21, BIBFRAME
+					</p>
+					<p><b>Archiv</b></p>
+					<p>&#9679; Entstehungskontext, unikaler Bestand<br>
+						&#9679; Software orientiert sich an analogen Findmitteln<br>
+						&#9679;	Metadatenformat: EAD, RiC
+					</p>
+					<h2>Learnings</h2>
+					<p>Im Gegensatz zu den Bibliotheken (Blog 3) war die Thematik der Archive aufgrund vergangener Module wesentlich präsenter. Die Metadatenstandards sowie die Entwicklungen und die Marktübersicht wurden bereits behandelt. In dieser Lernveranstaltung war die mehr Wiederholung. Allerding hatte ich keinerlei Erfahrung mit Archivinformationssystemen. Der Einblick in ArchivesSpace war spannend und neu. Für mich ist es schwierig, die ganzen Zusammenhänge mit den Arbeitsschritten zu vernetzen. Da in den meisten Softwarelösungen die Import-/Export-Funktion sehr ähnlich funktioniert, hätte ich mir eher gewünscht, dass wir diese Aufgabe nicht durchführen und stattdessen eine komplexere Aufgabe zur Erstellung von Repositories angeschaut hätten.</p>
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.671</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>

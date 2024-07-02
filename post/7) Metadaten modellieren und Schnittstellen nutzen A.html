@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Metadaten modellieren und Schnittstellen nutzen A</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Metadaten modellieren und Schnittstellen nutzen A</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/7) Thumbnail_Metadaten modellieren und Schnittstellen nutzen A.png" alt="Metadaten modellieren und Schnittstellen nutzen A"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>Die Lernveranstaltung zum Thema Metadaten modellieren und Schnittstellen nutzen teilt sich in drei Termine auf. Dieser Blogbeitrag behandelt den Teil A, welcher sich aus den Vorlesungen vom 23. und 30. April zusammensetzt. In diesen ersten Teil behandelten wir die Metadatenmodellierung am Beispiel von OpenRefine.</p>
+					<p>Der Beitrag zum Teil B befindet sich hier.</p>
+
+					<h2>OpenRefine</h2>
+					<p><a href="https://openrefine.org/">OpenRefine</a> hat einen Diamanten als Logo, weil es Rohdaten so aufbereitet und bereinigt, dass sie am Ende geschliffen und wertvoll sind. Zu den Hauptfunktionen zählen:</p>
+					<p>&#9679; <a href="https://openrefine.org/docs/manual/facets"> Faceting</a><br>
+						&#9679; <a href="https://openrefine.org/docs/manual/cellediting#cluster-and-edit"> Clustering</a><br>
+						&#9679; <a href="https://openrefine.org/docs/manual/reconciling"> Reconciliation</a><br>
+						&#9679;	<a href="https://openrefine.org/docs/manual/running#history-undoredo"> Infinite undo/redo</a><br>
+						&#9679;	<a href="https://openrefine.org/privacy"> Privacy</a><br>
+						&#9679;	<a href="https://openrefine.org/docs/manual/wikibase/overview"> Wikibase</a>
+					</p>
+					<p>Die Software gehörte zu Google und hat dadurch eine ziemlich aktive Community. Unterstütz werden folgende Formate:</p>
+					<p>&#9679; tabellarische Daten (CSV, TSV, XLS, XLSX, inkl. TXT mit Trennzeichen oder festen Spaltenbreiten)<br>
+						&#9679; Einfaches “flaches” XML (z.B. MARCXML) oder JSON mit Übung einfach zu modellieren<br>
+						&#9679; Komplexes XML mit Hierarchien (z.B. EAD) möglich mit Zusatztools<br>
+						&#9679;	<a href="https://blog.reeset.net/archives/1873"> in Kombination mit MarcEdit</a> für Analyse und Transformation von MARC21
+					</p>
+
+					<h2>Installation OpenRefine</h2>
+					<p>Mit einem Codespace <a href="https://anthonyxhd.github.io/lerntagebuch/post/3)_technische-grundlagen-02.html">(analog zu Blog 2) </a> konnten wir OpenRefine benutzen, was uns die lokale Installation gespart hat</p>
+					<img src="../assets/img/blog 7/installation openrefine.png" alt="Installation OpenRefine" class="content-img">
+					<br>
+					<h2>Basisfunktionen</h2>
+					<p>Zu Beginn haben wir Daten anhand eines Links importiert und daraus ein neues Projekt erstellt.</p>
+					<img src="../assets/img/blog 7/datenimport.png" alt="Datenimport" class="content-img">
+					<img src="../assets/img/blog 7/projekterstellung.png" alt="Projekterstellung" class="content-img">
+					<p>Im Anschluss wurden Basisfunktionen vorgeführt und Fingerübungen durchgeführt, die zu folgenden Ergebnissen führten:</p>
+					<p>1) Was ist die am häufigsten vergebene Lizenz? CC BY (954 Zeilen)<br>
+						Wieviele Artikel haben keine Lizenz? 6 Zeilen
+					</p>
+					<p>2)Warum erscheint MDPI AG zweimal und? Treffer hat 2x Leerschläge<br>
+						Wie lässt sich das Korrigieren 1x Leerschlag löschen
+					</p>
+					<p>Zu Beginn der Lektion am 30. April wurde die <a href="https://pad.gwdg.de/GDKAQMKwT3u-VP6hZ6NtOA#Vorführung-Reconciliation">Reconciliation</a> als Ergänzung der Besisfunktionen vorgezeigt, die es ermöglicht, Daten mit externen datenquellen wie <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> abzugleichen, um zusätzliche Informationen abzurufen oder eigene Daten an diese Quellen zu spenden.</p>
+
+					<h2>Übung CSV nach MARCXML mit OpenRefine</h2>
+					<p><a href="https://openrefine.org/docs/manual/exporting#templating-exporter">«The Templating Export window allows you to set your own separators, prefix, and suffix to create a complete dataset in the language of your choice.»</a> Mit die vorgegebene Vorlage als Ausgangsbasis haben wir die Aufgabe lösen können:</p>
+					<img src="../assets/img/blog 7/csv nach marcxml.png" alt="CSV nach MARCXML" class="content-img">
+					<p>Man kann festlegen, dass nur der erste Wert der Zelle "Authors" in das Tag 100 (Lead Author) und die übrigen Autoren in das Tag 700 übertragen werden. Der Wert der Zelle "Title" wird in das Tag 245 eingefügt. Mit der Angabe von ".escape('xml')" werden Zeichen, die in XML nicht erlaubt sind, korrekt behandelt. Die Prüfung der ausgegebenen Datei zeigt, dass das XML valide ist.</p>
+					<p><a href="https://pad.gwdg.de/GDKAQMKwT3u-VP6hZ6NtOA#Fragen--Ergebnisse">Fragen und Ergebnisse</a></p>
+
+					<h2>Learnings</h2>
+					<p>Die Arbeit mit OpenRefine war eine bereichernde Erfahrung für mich. Sie vermittelte mir nicht nur technische Fähigkeiten zur Datenbereinigung und -analyse, sondern vertiefte auch mein Verständnis im Umgang mit großen, unstrukturierten Datenmengen. OpenRefine ist ein mächtiges Werkzeug, das sicherlich in vielen Bereichen der Archiv- und Informationswissenschaften äußerst nützlich sein wird. Die zusätzliche <a href="https://pad.gwdg.de/GDKAQMKwT3u-VP6hZ6NtOA#Aufgabe-2-Template-ergänzen">Übungen 1 + 2</a> sowie die <a href="https://librarycarpentry.org/lc-open-refine/">die Lehrmaterialien von Library Carpentry zu OpenRefine</a> wären zwar spannend gewesen, aber ich löste sie aufgrund von Zeitgründen nicht.</p>
+					<p>Im Grossen und Ganzen waren die Lerninhalte für mich ganz neu. Durch die viele Übungen war dieser Block sehr Praxisorientiert, was mir besonders gut gefallen hat :)</p>
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.740</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Repository-Software für Publikationen und Forschungsdaten</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Repository-Software für Publikationen und Forschungsdaten</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/6) Thumbnail_Repository-Software für Publikationen und Forschungsdaten.png" alt="Thumbnail - Repository-Software für Publikationen und Forschungsdaten"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>In der sechsten Lerneinheit lag der Fokus auf der Repository-Software für Publikationen und Forschungsdaten. Diese Sitzung fand am 26. März und 9. April 2024 statt und bot eine tiefgehende Einführung in die Verwendung und Verwaltung von Repository-Software.</p>
+					<p>Der Einstieg begann mit einer Übersicht des Moduls als Grafik, die den Fluss der Lerneinheiten und deren Zusammenführung darstellte:</p>
+					<img src="../assets/img/blog 6/uerbersicht-modul.png" alt="Übersicht Modul BAIN" class="content-img">
+					<p>Bisher behandelt:</p>
+					<p>&#9679; Koha: <a href="https://anthonyxhd.github.io/lerntagebuch/post/4)%20Funktion%20und%20Aufbau%20von%20Bibliothekssystemen.html">Blog 4</a><br>
+						&#9679; ArchiveSpace: <a href="https://anthonyxhd.github.io/lerntagebuch/post/5)%20Funktion%20und%20Aufbau%20von%20Archivsystemen.html">Blog 5</a><br>
+						&#9679;	DSpace: aktueller Blog
+					</p>
+					<p><a href="https://en.wikipedia.org/wiki/Open_Archives_Initiative_Protocol_for_Metadata_Harvesting">OAI-PMH</a> ist der Standard, um Daten maschinell aus diesen Systemen abzuziehen. Der Datenaustausch mit <a href="https://en.wikipedia.org/wiki/VuFind">VuFind</a> und der Zusatzfluss <a href="https://en.wikipedia.org/wiki/OpenRefine">OpenRefine</a> werden in kommenden Blogs behandelt. Das Ziel ist, <b>diesen Fluss am Ende des Moduls durchdringen und beschreiben zu können</b>.</p>
+
+					<h2>Open Access und Open Data</h2>
+					<p>Wir behandelten den Unterschied zwischen Open Access und Open Data.</p>
+					<p><a href="https://en.wikipedia.org/wiki/Open_access">Open Access</a> zielt darauf ab, Forschungspublikationen frei zugänglich zu machen, was nicht nur kostenfrei, sondern auch ohne technische und rechtliche Hürden bedeutet. Die Inhalte können genutzt, kopiert und weiterverbreitet werden, solange die Urheberschaft korrekt angegeben wird.</p>
+					<p><a href="https://en.wikipedia.org/wiki/Open_data">Open Data</a> konzentriert sich auf die Veröffentlichung primärer Forschungsdaten, um durch ihre freie Nachnutzung größere Transparenz und verstärkte Zusammenarbeit zu ermöglichen.</p>
+
+					<h2>Forschungsinformationen</h2>
+					<p>Forschungsinformationen umfassen Daten zu Forschenden, Projekten und Patenten, mit dem Ziel der umfassenden Berichterstattung. In der Schweiz wurde die Standardisierung dieser Informationen in einer <a href="https://edoc.unibas.ch/54788/">Studie von Ackermann Krzemnicki und Hägele</a> untersucht.</p>
+
+					<h2>DSpace</h2>
+					<p><a href="https://dspace.lyrasis.org">DSpace</a>ist eine Software, die sich für die Verwaltung von Publikationen und Forschungsdaten eignet. Sie kann durch DSpace-CRIS erweitert werden, um auch Forschungsinformationen zu verwalten. Der Metadatenstandard, der in DSpace verwendet wird, ist <a href="https://guides.library.ucsc.edu/c.php?g=618773&p=4306386#:~:text=Originally%20developed%20to%20describe%20web,for%20greater%20specificity%20and%20granularity.">Qualified Dublin Core</a> (bisherige Kenntnisse über Dublin Core siehe <a href="https://anthonyxhd.github.io/lerntagebuch/post/4)%20Funktion%20und%20Aufbau%20von%20Bibliothekssystemen.html">Blog 4</a>. . Es kann jedoch auch das <a href="https://en.wikipedia.org/wiki/DataCite">DataCite</a> Metadatenschema eingesetzt werden.</p>
+					<p>Um mit DSpace vertraut zu werden, haben wir zwei Aufgaben gelöst:</p>
+					<p><b>1. Community erstellen und eine Berechtigung für den „Community-Administrator“ hinzufügen</b></p>
+					<img src="../assets/img/blog 6/dspace aufgabe 1.png" alt="DSpace Aufgabe 1" class="content-img">
+					<p><b>2. Collection erstellen und Berechtigung für den „Collection-Administrator“ hinzufügen</b></p>
+					<img src="../assets/img/blog 6/dspace aufgabe 2.png" alt="DSpace Aufgabe 2" class="content-img">
+					<p>Um dies zu veranschaulichen, haben wir uns das Beispiel der TUHH angeschaut, dessen Repositorium auf DSpace-CRIS basiert:</p>
+					<p>&#9679;<a href="https://tore.tuhh.de/home"> TUHH Open Research</a><br>
+						&#9679;<a href="https://pad.gwdg.de/ycs5WlX8R_6aiNDebpvJoA#Fragen--Erkenntnisse"> Fragen und Erkenntnisse aus Übungen</a>
+					</p>
+
+					<h2>Import / Export</h2>
+					<p>DSpace bietet auch dateibasierten Import, besonders relevant sind im Kontext von Repositorien jedoch die Schnittstellen</p>
+					<p>Import</p>
+					<p>&#9679; <b>SWORD:</b> Ermöglicht die Publikation in DSpace von anderen Webseiten (z.B. über ein Formular auf dem Intranet der Hochschule)
+					</p>
+					<p>Export</p>
+					<p>&#9679; <b>OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting):</b> Ein Harvester ruft Daten aus verschiedenen Systemen ab, um sie zu vereinheitlichen und in einer übergreifenden Suchoberfläche bereitzustellen<br>
+						&#9679; <b>SWORD</b> ist eine Schnittstelle für den Upload von Publikationen in ein Repository, was es ermöglicht, ein Formular mit Dateiupload auf einer externen Webseite anzubieten<br>
+						&#9679; Um Daten aus dem Repository auf anderen Webseiten anzuzeigen, wie z.B. Publikationslisten, werden RSS-Feeds verwendet
+					</p>
+
+					<h2>Learnings</h2>¨
+					<p>Die Grafik am Anfang der Lernveranstaltung half dabei, die Zusammenhänge zu verstehen, die mir vorher nicht klar waren. Open Data und Open Access waren mir bereits aus vorherigen Modulen bekannt (siehe Blog 1). Forschungsdaten behandelten wir im Wahlpflichtmodul „Datenmanagement“, was mir ebenfalls bekannt war. Neu war für mich „Qualified Dublin Core“ und die Software DSpace. Es fällt mir noch etwas schwer, die praktische Umsetzung zu sehen, insbesondere wie man mit DSpace-CRIS ein Repositorium wie das der TUHH schaffen kann.</p>				
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.740</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>

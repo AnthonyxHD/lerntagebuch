@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Metadaten modellieren und Schnittstellen nutzen B</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Metadaten modellieren und Schnittstellen nutzen B</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/8) Thumbnail_Metadaten modellieren und Schnittstellen nutzen B.png" alt="Metadaten modellieren und Schnittstellen nutzen B"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>In dieser Lerneinheit fokussierten wir uns auf den Abruf der Daten und deren Konvertierung in das Marc21-Format. Dies betrifft den Bereich der Übersichtsgrafik, der bisher noch nicht bearbeitet wurde (<a href="https://anthonyxhd.github.io/lerntagebuch/post/6)%20Repository-Software%20für%20Publikationen%20und%20Forschungsdaten.html">siehe Blog 6</a>)</p>
+					<img src="../assets/img/blog 8/uerbersicht-modul.png" alt="Übersichtsmodul" class="content-img">
+					<p>Bisher behandelt</p>
+					<p>&#9679; Koha: <a href="https://anthonyxhd.github.io/lerntagebuch/post/4)%20Funktion%20und%20Aufbau%20von%20Bibliothekssystemen.html">Blog 4</a><br>
+						&#9679; ArchiveSpace: <a href="https://anthonyxhd.github.io/lerntagebuch/post/5)%20Funktion%20und%20Aufbau%20von%20Archivsystemen.html">Blog 5</a><br>
+						&#9679;	DSpace: <a href="https://anthonyxhd.github.io/lerntagebuch/post/6)%20Repository-Software%20für%20Publikationen%20und%20Forschungsdaten.html">Blog 6</a><br>
+						&#9679; OpenRefine <a href="https://anthonyxhd.github.io/lerntagebuch/post/7)%20Metadaten%20modellieren%20und%20Schnittstellen%20nutzen%20A.html">Blog 7</a>
+					</p>
+
+					<p>Mit <a href="https://en.wikipedia.org/wiki/VuFind">VuFind</a>Harvest (OAI Harvester) kann man Daten herunterladen und dann in das MARC21-XML konvertieren. Dieser Standard wurde gewählt, weil er am weitesten verbreitet ist und bei der Konvertierung immer mit Verlusten gerechnet werden muss.</p>
+
+					<h2>Austauschprotokolle für Metadaten</h2>
+					<p>Von den zahlreichen Übertragungsprotokollen im Bibliotheks- und Archivbereich sind drei besonders weit verbreitet und relevant:</p>
+					<p>&#9679; <a href="https://www.loc.gov/z3950/agency/">Z39.50</a><br>
+						&#9679; <a href="https://www.loc.gov/standards/sru/">SRU</a><br>
+						&#9679; <a href="https://www.openarchives.org/pmh/">OAI-PMH</a>
+					</p>
+					<p>Z39.50 und SRU eignen sich besonders für Live-Abfragen oder gezielte Datenabrufe mit vielen Parametern, während OAI-PMH vor allem für größere Datenabzüge und regelmäßige Aktualisierungen geeignet ist. Zu beachten ist, dass Z39.50 zwar sehr alt ist, aber immer noch im Einsatz. Die Arbeit mit diesem Protokoll kann nicht direkt über den Browser erfolgen und benötigt daher Zusatzsoftware.</p>
+
+					<h2>Metadaten über OAI-PMH harvesten mit VuFindHarvest</h2>
+					<p>Um die Übungen zu lösen, haben wir erneut mit einem Codespace auf GitHub gearbeitet (<a href="https://anthonyxhd.github.io/lerntagebuch/post/7)%20Metadaten%20modellieren%20und%20Schnittstellen%20nutzen%20A.html">Blog 7</a>). Zu Beginn luden wir die Datensätze aus den entsprechenden Demo-Installationen herunter. Dazu mussten wir die Prefixes finden, um das Kommando zum Aufruf des Harvestings anzupassen. Dies führte dazu, dass wir die Daten im richtigen Format herunterluden:</p>
+					<p>&#9679; Koha: –metadataPrefix=marc21 <br>
+						&#9679; ArchivesSpace: –metadataPrefix=oai_ead <br>
+						&#9679; DSpace: –metadataPrefix=oai_dc
+					</p>
+					<img src="../assets/img/blog 8/vifundharvest.png" alt="ViFuHarvest" class="content-img"><br>
+
+					<h2>Konvertierung / Crosswalk</h2>
+					<p>Crosswalks sind ein gängiger Begriff, um die Konvertierung von einem Metadatenstandard in einen anderen zu beschreiben (<a href="https://www.linkedin.com/advice/0/how-can-you-design-effective-metadata-crosswalks-fk9gc">coole Übersicht</a>). Ein Beispiel dafür ist die Umwandlung von Dublin Core zu MARC21. Der "Crosswalk" beinhaltet Regeln, wie Elemente und Werte zugeordnet werden, auch bekannt als Mapping. Obwohl dies im Idealfall verlustfrei erfolgen soll, ist meist keine 1:1-Zuordnung möglich.</p>
+					<p><a href="https://en.wikipedia.org/wiki/XSLT#:~:text=XSLT%20(Extensible%20Stylesheet%20Language%20Transformations,as%20PDF%2C%20PostScript%20and%20PNG.">XSLT (Extensible Stylesheet Language Transformations)</a> ist eine Programmiersprache zur Transformation von XML-Dokumenten. Sie wurde 1999 als W3C-Empfehlung veröffentlicht und war ursprünglich dafür gedacht, ein XML-Dokument in ein anderes zu transformieren.</p>
+					<p>Versuch eine heruntergeladene Datei zu konvertieren mit dem <a href="http://xsltransform.net">Online-Tool</a></p>
+					<img src="../assets/img/blog 8/konvertierung.png" alt="Konvertierung mit Online-Tool" class="content-img">
+					<p>Beispiele der Library of Congress (LoC)</p>
+					<p>&#9679; <a href="https://www.loc.gov/marc/marc2dc.html">MARC21 zu DC</a><br>
+						&#9679; <a href="https://www.loc.gov/marc/dccross.html">DC zu MARC21</a>
+					</p>
+					<p>Ziel des Moduls ist es nicht, ein XSLT-Profi zu werden, sondern den Konvertierungsprozess zu durchschauen und zu verstehen. Hierzu ist das erste Beispiel der Library of Congress sehr hilfreich und verständlich.</p>
+
+					<h2>MarcEdit</h2>
+					<p>Am Ende der Lernveranstaltung wurde die kostenlose, aber nicht Open Source-Software "MarcEdit" vorgeführt, die häufig bei der Arbeit mit MARC21 verwendet wird.</p>
+					<img src="../assets/img/blog 8/marcedit.png" alt="MarcEdit" class="content-img">
+					<p>Die Schritte, wie man in solchen Fällen vorgeht, sind <a href="https://pad.gwdg.de/vv-Q4RDnQ22Gqc-EEgbewA#Transformation-von-ArchivesSpace-EAD-zu-MARC21-Versuch-2">hier</a> beschrieben</p>
+					
+					<h2>Learnings</h2>
+					<p>In dieser Lerneinheit lernte ich, wie man Daten herunterlädt und in das MARC21-Format konvertiert. Ich erlangte ein Verständnis der wichtigsten Metadatenübertragungsprotokolle wie Z39.50, SRU und OAI-PMH sowie deren Einsatzgebiete.</p>
+					<p>In einer Übung setzten wir VuFindHarvest zur Datenernte ein. Dieser Teil gefiel mir besonders gut, da der Praxisbezug und die Arbeit mit der Shell das Ganze für mich interessant machten.</p>
+					<p>Zuletzt wurden mir Kenntnisse über Crosswalks und die Herausforderungen der verlustfreien Konvertierung zwischen verschiedenen Metadatenstandards vermittelt. XSLT wurde ebenfalls gezeigt. Das Grundprinzip habe ich zwar verstanden, aber eine vertiefte Arbeit wäre hierzu notwendig. Das Interesse ist jedoch nicht groß genug, um die Zusatzübungen zu machen.</p>
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.707</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Suchmaschinen und Discovery-Systeme A</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Suchmaschinen und Discovery-Systeme A</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/9) Thumbnail_Suchmaschinen und Discovery-Systeme A.png" alt="Suchmaschinen und Discovery-Systeme A"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>Dieser Blogbeitrag behandelt zusammen mit Beitrag 10 das Thema Suchmaschinen und Discovery-Systeme. Die Lerneinheit vom 21. Mai 2024 konzentriert sich auf die Funktionsweise von Suchmaschinen. In der Modulübersicht betrifft das die letzten beiden Elemente: Solr und VuFind.</p>
+
+					<h2>Von OPAC zu Discovery-Systemen</h2>
+					<p>Ein <a href="https://en.wikipedia.org/wiki/Online_public_access_catalog">OPAC (Online Public Access Catalog)</a> ist ein grundlegendes Werkzeug, das Bibliotheken seit den 1970er Jahren verwenden, um ihren Katalog online zugänglich zu machen. Ursprünglich als digitale Version der physischen Katalogkarten entwickelt, bieten OPACs grundlegende Suchfunktionen und ermöglichen den Zugriff auf die physischen und digitalen Bestände einer Bibliothek. Trotz technischer Fortschritte bleiben die Suchmöglichkeiten in OPACs begrenzt und meist auf exakte Übereinstimmungen und boolesche Operatoren beschränkt.</p>
+					<p>Mit dem Aufkommen moderner Suchtechnologien wurden <a href="https://de.wikipedia.org/wiki/Discovery-System">Discovery-Systeme</a> entwickelt, um die Funktionalitäten von OPACs zu erweitern. Discovery-Systeme erlauben es Nutzern, nicht nur den Katalog einer Bibliothek zu durchsuchen, sondern auch auf lizenzierte Inhalte aus verschiedenen Datenbanken und Repositorien zuzugreifen. Diese Systeme bewerten Suchergebnisse nach ihrer Relevanz und bieten eine fehlertolerante Suche, die auch bei ungenauen Eingaben umfassende Trefferlisten liefert. Die Suchergebnisse basieren auf dem <a href="https://lunio.ai/glossary/match-type/">Prinzip des "Best Match" anstelle des "Exact Match"</a>.</p>
+
+					<h2>VuFind</h2>
+					<p><a href="https://vufind.org/vufind/">VuFind</a>ist eine Open-Source-Software, die speziell für Bibliotheken entwickelt wurde. Sie bietet eine benutzerfreundliche Oberfläche, die das Durchsuchen von Bibliothekskatalogen, institutionellen Repositorien, Open-Access-Journalartikeln und digitalisierten Materialien ermöglicht. VuFind nutzt die Solr-Suchmaschine als Backend, um Daten zu indexieren und durchsuchbar zu machen. VuFind integriert Solr nahtlos und bietet eine intuitive, natürlichsprachliche Suche, die für Endbenutzer optimiert ist. Solr fungiert dabei als leistungsstarke Suchmaschineninfrastruktur, die eine effiziente Indexierung und facettierte Suche ermöglicht.</p>
+					<p>Die Installationsschritte werden in folgenden Links beschrieben:</p>
+					<p>&#9679; <a href="https://vufind.org/wiki/installation:ubuntu"> VuFind Wiki</a><br>
+						&#9679; ArchiveSpace: <a href="https://pad.gwdg.de/HW9D520ORJu79RoIEueNCw#Installation-und-Konfiguration-von-VuFind">Unterrichtsunterlagen</a><br>
+						&#9679;	DSpace: <a href="https://anthonyxhd.github.io/lerntagebuch/post/6)%20Repository-Software%20für%20Publikationen%20und%20Forschungsdaten.html">Blog 6</a>
+					</p>
+
+					<h2>Solr</h2>
+					<p><a href="https://solr.apache.org/">Solr</a> ist eine hochskalierbare Open-Source-Suchplattform, die auf Apache Lucene basiert. Sie wird häufig für Volltextsuche, facettierte Navigation und Echtzeit-Indexierung verwendet. Solr bietet eine umfassende Administrationsoberfläche zur Konfiguration und Verwaltung von Suchindizes und dient als Backend für viele Suchanwendungen, einschließlich VuFind.</p>
+					<p>Ein wesentlicher Vorteil von Solr ist die Fähigkeit, komplexe Suchanfragen effizient zu verarbeiten. Solr unterstützt sowohl <a href="https://bold-ventures.de/magazin/horizontale-und-vertikale-suche-seo-grundlagen/">horizontale als auch vertikale Suchmaschinen</a>. Horizontale Suchmaschinen durchsuchen heterogene Datenbestände ohne ein festgelegtes Datenschema und sind ideal für unspezifische Suchen wie Internetsuchen oder Volltextsuchen. Vertikale Suchmaschinen hingegen sind auf homogene Datenbestände ausgerichtet und erfordern ein festgelegtes Datenschema, was sie für spezifische Anwendungen wie Bibliothekskataloge oder Online-Shops prädestiniert.</p>
+					<img src="../assets/img/blog 9/suchindex oder datenbank.png" alt="suchindex oder Datenbank?" class="content-img">
+
+					<h2>Vergleich VuFind und Solr</h2>
+					<p>In der praktischen Anwendung haben VuFind und Solr gezeigt, dass sie eine robuste Lösung für Bibliotheken darstellen. Während VuFind die benutzerfreundliche Oberfläche bereitstellt, liefert Solr die notwendige Suchmaschineninfrastruktur. Nutzer können in VuFind intuitiv nach Ressourcen suchen, während Solr im Hintergrund die Suchanfragen effizient verarbeitet und relevante Ergebnisse liefert.</p>
+					<img src="../assets/img/blog 9/vufind vs soolr.png" alt="VuFind vs. Solr" class="content-img">
+
+					<h2>Learnings</h2>
+					<p>Für mich war es interessant zu verstehen, was ein OPAC ist. Bei der Arbeit (siehe Blog 1) habe ich bereits damit gearbeitet und davon gehört. Bis jetzt wusste ich jedoch nicht genau, was das ist. Spannend war auch zu sehen, wie VuFind und Solr kombiniert werden können, um eine leistungsstarke Lösung zu erhalten.</p>
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.875</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Linked Data</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Was habe ich (nicht) gelernt?</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/12) Thumbnail_Was habe ich (nicht) gelernt.png" alt="Was habe ich (nicht) gelernt?"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>Ein Semester lang habe ich mich nun mit Bibliotheks- und Archivinformatik auseinandergesetzt. Als Leistungsnachweis ist dieser Blog entstanden. Dieser Beitrag ist nun der letzte Eintrag meines Lerntagebuchs. Hier möchte ich das (nicht) Gelernte zusammenfassen und meine Erfahrungen mit diesem Modul teilen.</p>
+					
+					<h2>Was habe ich gelernt?</h2>
+					<p>Mir wird klar, was ich alles gelernt habe, wenn ich die Übersichtsgrafik des Moduls anschaue. Zu Beginn des Semesters hätte ich damit nichts anfangen können, doch nun, am Ende des Semesters, kann ich die Inhalte mit meinen eigenen Worten wiedergeben.</p>
+					<img src="../assets/img/blog 12/uerbersicht-modul.png" alt="Modulsübersicht" class="content-img">
+					<p><b>Datenquellen:</b></p>
+					<p>
+						&#9679; <a href="../post/4) Funktion und Aufbau von Bibliothekssystemen.html"> Koha</a>: Ein Bibliotheksmanagementsystem, das OAI-PMH unterstützt <br>
+						&#9679; <a href="../post/5) Funktion und Aufbau von Archivsystemen.html"> ArchiveSpace</a>: Ein System zur Verwaltung von Archivbeständen, ebenfalls mit OAI-PMH Unterstützung <br>
+						&#9679; <a href="../post/6) Repository-Software für Publikationen und Forschungsdaten.html"> DSpace</a>: Ein digitales Repositoriumssystem, das OAI-PMH verwendet
+					</p>
+
+					<p><b>Harvesting und Transformation:</b></p>
+					<p>
+						&#9679; <a href="../post/10) Suchmaschinen und Discovery-Systeme B.html"> VuFindHarvest (OAI Harvester)</a>: Dieses Tool sammelt Metadaten von den OAI-PMH-fähigen Systemen (Koha, ArchivesSpace, DSpace) und bringt sie in ein standardisiertes Format <br>
+						&#9679; <a href="../post/7) Metadaten modellieren und Schnittstellen nutzen A.html"> OpenRefine</a>: Ein Tool zur Datenbereinigung und -transformation, das die CSV-Daten aus DOAJ in das MARC21-XML-Format konvertiert <br>
+						&#9679; <a href="../post/8) Metadaten modellieren und Schnittstellen nutzen B.html"> marcEdit (XSLT)</a>: Ein weiteres Werkzeug zur Transformation von Metadaten. Es konvertiert verschiedene Formate wie MARC21-XML, EAD und Dublin Core, damit sie in VuFind genutzt werden können
+					</p>
+					<p><b>Zielsystem:</b></p>
+					<p>
+						&#9679; <a href="../post/9) Suchmaschinen und Discovery-Systeme A.html">Solr</a>: Ein Suchserver, der die indizierten Metadaten speichert und für Suchanfragen zur Verfügung stellt<br>
+						&#9679; <a href="../post/10) Suchmaschinen und Discovery-Systeme B.html">VuFind</a>: Ein Discovery-System, das auf Solr basiert und eine benutzerfreundliche Oberfläche für die Suche und den Zugriff auf die indizierten Daten bietet.
+					</p>
+					<p>Koha, ArchivesSpace und DSpace stelle ihre Metadaten über OAI-PMH zur Verfügung. VuFindHarvest (OAI Harvester) sammelt die Matadaten aus diesen Systemen und konvertiert sie in ein gemensames Format (meist MARC21-XML, EAD oder Dublin Core). Die gesammelten Daten werden dann durch marcEdit (XSLT) weiterverarbeitet, um in das endgültige MARC21-XML-Format zu überführen, das von Solr und VuFind verwendet wird. Alle gesammelten und transformierten Metadaten werden in Solr indexiert. VuFind nutzt die indizierten Daten in Solr, um eine beutzerfreundliche Suchoberfläche bereitzustellen, über die Nutzer auf die Metadaten zugreifen können.</p>
+					<p>Weiteres Gelernte habe ich im Laufe der Blogverfassung direkt unter <b>«Learnings»</b> integriert und steht in allen Blogs zur Verfügung:</p>
+
+					<h2>Was habe ich nicht gelernt?</h2>
+					<p>Da ich weder im Bibliotheks- noch im Archivwesen tätig bin, war vieles für mich neu. Meine hauptsächliche Schwierigkeit bestand vor allem in der Praxis. Ich habe das Gefühl, dass ich viel Theorie gelernt habe, aber nicht weiss, wie ich sie anwenden kann. Meiner Ansicht nach waren die Übungen zu oberflächlich. Ich habe dieses Semester viele Bibliotheks- und Archivsysteme gesehen, bin jedoch der Meinung, dass ich in der Praxis nicht damit umgehen könnte. Ich fühle mich nicht sattelfest und eher unsicher. Daher behaupte ich, dass ich nicht wirklich viel Praxis gelernt habe.</p>
+
+					<h2>Weitere Anmerkungen</h2>
+					<p>Für mich war es besonders cool, dass wir selbst auswählen konnten, wie wir unseren Blog gestalten. Ich habe mich entschieden, meinen Blog von Grund auf selbst zu erstellen, was mir besonders viel Spass gemacht hat. Ich konnte mich mit HTML, CSS und JavaScript sowie mit dem Design auseinandersetzen.</p>
+					<p>Weniger spassig war jedoch das Verfassen der Blogbeiträge. Zu Beginn des Semesters habe ich an den Vorlesungen teilgenommen. Um meinen Blog zu verfassen, musste ich jedoch auf die Aufzeichnungen zurückgreifen, sodass ich die Vorlesungen sozusagen doppelt besucht habe. Aufgrund dessen habe ich mich entschieden, nur noch die Aufzeichnungen zu benutzen.</p>
+					<p>Ein letzter Punkt ist, dass es während des Semesters nur eine Übung gab. Ich hätte es sinnvoller gefunden, wenn wir mehr Übungen gehabt hätten und unsere Erfahrungen in einem Lerntagebuch festgehalten hätten, anstatt für jede Vorlesung einen Blogbeitrag zu verfassen.</p>
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.949</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>

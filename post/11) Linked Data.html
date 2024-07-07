@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Linked Data</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Linked Data</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/11) Thumbnail_Linked Data.png" alt="Linked Data"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>wie im <a href="../post/4) Funktion und Aufbau von Bibliothekssystemen.html">Blog 4</a> angekündigt, beschäftig sich diese letzte Lernveranstaltung vom 3. Juni 2024 mit dem Thema des Linked Data</p>
+					<P><a href="https://de.wikipedia.org/wiki/Linked_Open_Data">Linked Data</a> hat sich als wesentliche Technologie in Bibliotheken und Archiven etabliert, um Daten interoperabel und nutzbar zu machen. In den letzten Vorlesungen haben wir uns intensiv mit aktuellen Datenmodellen für Metadaten, dem Konzept von Linked Open Usable Data (LOUD) und der Anreicherung von Metadaten beschäftigt.</P>
+
+					<h2>BIBFRAME</h2>
+					<p><a href="https://en.wikipedia.org/wiki/BIBFRAME">BIBFRAME</a> als Nachfolger von MARC21 entwickelt und basiert auf den Prinzipien von Linked Data. Es zielt darauf ab, bibliografische Informationen flexibler und vernetzter zu gestalten. Im Gegensatz zu MARC21, das Informationen in einem einzigen Datensatz bündelt, organisiert BIBFRAME diese in drei Abstraktionsebenen: Work, Instance und Item. Dies ermöglicht es, einzelne Entitäten wie Autoren oder Verlage separat zu verwalten und zu verlinken, wodurch Redundanzen vermieden und Änderungen leichter umgesetzt werden können.</p>
+					<img src="../assets/img/blog 11/bibframe.png" alt="BIBFRAM" class="content-img">
+					
+					<h2>Records in Context (RiC)</h2>
+					<p><a href="https://en.wikipedia.org/wiki/Records_in_Contexts">RiC</a> ist das Pendant zu BIBFRAME für das Archivwesen und basiert ebenfalls auf Linked Data-Prinzipien. Es ermöglicht neue und mehrfache Beziehungen zwischen Entitäten und legt besonderen Wert auf die Provenienz und das Konzept von Events. RiC zielt darauf ab, die Herkunft und den Kontext von Archivdokumenten besser darzustellen und so deren Auffindbarkeit und Nutzung zu verbessern.</p>
+					<img src="../assets/img/blog 11/ric.jpg" alt="RiC" class="content-img">
+
+					<h2>Linked Open Usable Data (LOUD)</h2>
+					<p><a href="https://linked.art/loud/">LOUD</a> erweitert das Konzept von Linked Open Data (LOD) um die Anforderung der Nutzbarkeit. Daten sollen nicht nur verlinkt und offen zugänglich sein, sondern auch in einer Form bereitgestellt werden, die eine einfache und effiziente Nutzung ermöglicht. Dies erfordert die Bereitstellung klar dokumentierter Schnittstellen und einheitlicher Datenstrukturen, die es Entwicklern und Datenanalysten erleichtern, mit den Daten zu arbeiten. Prinzipien wie einfache Einstiegshürden und konsistente Muster sind dabei entscheidend.</p>
+
+					<h2>Metadatenanreicherung</h2>
+					<p>Die Anreicherung von Metadaten ist ein wichtiger Prozess, um die Qualität und den Informationsgehalt von Datenbeständen zu verbessern. In den Übungen haben wir gezeigt, wie man mit <a href="https://openrefine.org">OpenRefine</a> (<a href="../post/7) Metadaten modellieren und Schnittstellen nutzen A.html">Blog 7</a>) und <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a> Metadaten anreichern kann. Der Prozess der „Reconciliation“ hilft dabei, Daten aus unterschiedlichen Quellen zu verknüpfen, indem Gemeinsamkeiten identifiziert und Verknüpfungen hergestellt werden. Dies verbessert nicht nur die Vollständigkeit der Daten, sondern erleichtert auch die spätere Datenanalyse</p>
+					
+					<h2>Marktüberblick und Entscheidungskriterien</h2>
+					<p>Die Wahl des richtigen Discovery-Systems hängt stark von den spezifischen Anforderungen und Ressourcen einer Institution ab. Kommerzielle Systeme wie Ex Libris Primo bieten umfassenden Support und integrierte Dienste, während Open-Source-Lösungen wie VuFind Flexibilität und Anpassbarkeit bieten. Externe Suchindizes wie K10plus-Zentral können in VuFind integriert werden, um umfangreiche Suchfunktionen bereitzustellen.</p>
+				
+					<h2>Learnings</h2>
+					<p>Die Integration und Nutzung von Linked Data und aktuellen Datenmodellen wie BIBFRAME und RiC sind essenziell für die moderne Informationsverwaltung in Bibliotheken und Archiven. Aufgrund dessen war es spannend sich mit dieser Thematik auseinanderzusetzen. Einige Aspekte dieser Veranstaltung wurden bereits in den Archivmodulen wie Lebenszyklusmanagement 1 und 2 behandelt. Dennoch war so ziemlich alles neu für mich.</p>
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.368</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>

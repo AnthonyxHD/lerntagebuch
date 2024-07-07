@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang ="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width= device-widht , initial-scale= 1.0">	
+		<link rel="stylesheet" href="../assets/stylesheet.css">
+		
+		<title>Suchmaschinen und Discovery-Systeme B</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1><a href="../index.html">LERNTAGEBUCH</a></h1>
+		</header>
+		
+		<div class="container">
+			<h1 style="text-align: center;">Suchmaschinen und Discovery-Systeme B</h1> <!-- Blogtitel -->
+			<div class="post-img">
+				<img src="../assets/img/10) Thumbnail_Suchmaschinen und Discovery-Systeme B.png" alt="Suchmaschinen und Discovery-Systeme B"> <!-- Thumbnail -->
+			</div>
+			<!-- Inhalt -->
+			<div class="post">
+				<div>
+					<p>Dieser Blogbeitrag behandelt zusammen mit <a href="../post/9) Suchmaschinen und Discovery-Systeme A.html">Beitrag 9</a> das Thema Suchmaschinen und Discovery-Systeme. Die Lerneinheit vom 3. Juni 2024 konzentriert sich auf die Datenintegration und Konfiguration von VuFind.</p>
+					<p>In dieser Veranstaltung wurde eine größere Gruppenarbeit durchgeführt. Das Ziel war es, die mit MarcEdit (<a href="../post/8) Metadaten modellieren und Schnittstellen nutzen B.html">Blog 8</a>) und OpenRefine (<a href="../post/7) Metadaten modellieren und Schnittstellen nutzen A.html">Blog 7</a>) konvertierten Daten von Koha (<a href="../post/4) Funktion und Aufbau von Bibliothekssystemen.html">Blog 4</a>) ArchivesSpace (<a href="../post/5) Funktion und Aufbau von Archivsystemen.html">Blog 5</a>) DSpace (<a href="../post/6) Repository-Software für Publikationen und Forschungsdaten.html">Blog 6</a>) und <a href="https://en.wikipedia.org/wiki/Directory_of_Open_Access_Journals">DOAJ</a> in <a href="https://vufind.org/vufind/">VuFind</a> zu importieren. Die Erkenntnisse und Rückfragen wurden hier festgehalten.</p>
+					<p>Leider konnte ich an dieser Veranstaltung nicht teilnehmen, weshalb ich bei der Gruppenarbeit nicht mitmachen konnte. Stattdessen habe ich mir die Aufzeichnung angesehen und mich mit den dort vorhandenen Inhalten auseinandergesetzt.</p>
+
+					<h2>Datenintegration in VuFind</h2>
+					<p>Die Integration von Daten in VuFind erfordert, dass die Daten im MARC- oder MARCXML-Format vorliegen. Jeder Datensatz muss einen eindeutigen Identifier besitzen, um Konflikte zu vermeiden. Besonders bei der Arbeit mit Archivsystemen wie ArchivesSpace oder digitalen Repositories wie DSpace ist es wichtig, diese Identifikatoren korrekt zu setzen. Die Datenintegration erfolgt meist über die Kommandozeile, wobei spezielle Skripte genutzt werden.</p>
+					<img src="../assets/img/blog 10/kammando vufind.png" alt="Kommando VuFind Installation" class="content-img">
+					<p>Neben der eigentlichen Integration von Daten ist auch die Konfiguration von VuFind entscheidend. Anpassungen in den Konfigurationsdateien können unter anderem die Benutzeroberfläche beeinflussen. So lassen sich beispielsweise der Tab-Titel und die Position der Seitenleiste ändern, um die Nutzungserfahrung zu verbessern.</p>
+
+					<h2>Kommerzielle und Open-Source Discovery-Systeme</h2>
+					<p>Der Markt für <a href="https://de.wikipedia.org/wiki/Discovery-System">Discovery-Systeme</a> ist vielfältig und bietet sowohl kommerzielle als auch Open-Source-Lösungen. <a href="https://exlibrisgroup.com/products/primo-discovery-service/">Ex Libris Primo</a> ist der Marktführer bei kommerziellen Systemen, gefolgt von <a href="https://www.oclc.org/en/worldcat-discovery.html">OCLC WorldCat Discovery</a> und <a href="https://www.ebsco.com/products/ebsco-discovery-service">EBSCO EDS</a>. Diese Systeme bieten umfassende Serviceleistungen und integrierte Benutzerdatenverwaltung.</p>
+					<p>Auf der anderen Seite stehen Open-Source-Lösungen wie VuFind, die zwar keinen eigenen Artikelindex mitbringen, jedoch durch ihre Flexibilität und Anpassbarkeit überzeugen. Besonders interessant ist die Kombination von VuFind mit externen Suchindizes wie <a href="https://verbundwiki.gbv.de/display/VZG/K10plus-Zentral">K10plus-Zentral</a>, die umfangreiche bibliografische Datenbanken bieten und in VuFind integriert werden können.</p>
+					
+					<h2>Suchportal der HAAB</h2>
+					<p>Ein praktisches Beispiel für die Anwendung von VuFind ist das Suchportal der <a href="https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/">Herzogin Anna Amalia Bibliothek (HAAB)</a>. von Datensätzen aus verschiedenen Quellen enthält. Die Systemarchitektur des Suchportals zeigt, dass verschiedene Schnittstellen notwendig sind, um ein Discovery-System effizient zu betreiben. Dazu gehören Schnittstellen für Benutzerdaten (PAIA) und Ausleihdaten (DAIA).</p>
+					<img src="../assets/img/blog 10/haab.png" alt="HAAB" class="content-img">
+
+					<h2>Learnings</h2>
+					<p>Durch die Auseinandersetzung mit der Aufzeichnung konnte ich lernen, dass der erfolgreiche Import von Daten in VuFind voraussetzt, dass die Daten im richtigen Format vorliegen und eindeutige Identifier besitzen. Durch das Suchportal der HAAB wurde es für mich deutlich, wie Discovery-Systeme in der Praxis angewendet werden und welche technischen und organisatorischen Anforderungen dafür notwendig sind. Die Inhalte dieser Vorlesung brachten das bisher Gelernte zusammen, was spannend zu sehen war.</p>
+				</div>
+			</div>
+			<!-- Metadaten -->
+			<p>Zeichen: 3.208</p>
+		</div>
+		
+		<footer>
+			<p>&copy; 2024 Anthony Zoss. All rights reserved.</p>
+		</footer>
+		
+		<!-- Back-to-top arrow -->
+		<div class="back-to-top" onclick="scrollToTop()">^</div>
+		<script src="../script/back-to-top.js"></script>
+	</body>
+</html>
